@@ -1,2 +1,18 @@
 # Data-structure-and-Algorithm
- Not finised yet
+ [] Finish.
+**Content**
+  - [] Array.
+  - [] Linked-list.
+    > Singly linked-list.
+    > Double linked-list.
+    > Circular linked-list.
+  - [] Stack.
+  - [] Queue.
+  - [] Tree and applied tree.
+  - [] Hash.
+  - [] Tries.
+  - [] Priority Queue and Heap.
+  - [] Sorting.
+  - [] Searching.
+  
+  

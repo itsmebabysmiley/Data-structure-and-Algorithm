@@ -1,11 +1,11 @@
 # Data-structure-and-Algorithm
- NOT FINISHED YET\br
-##**Content**\br
+ NOT FINISHED YET\
+##**Content**\
   - Array.
   - Linked-list.
-    > Singly linked-list.\br
-    > Double linked-list.\br
-    > Circular linked-list.\br
+    > Singly linked-list.\
+    > Double linked-list.\
+    > Circular linked-list.\
   - Stack.
   - Queue.
   - Tree and applied tree.

@@ -1,6 +1,6 @@
 # Data-structure-and-Algorithm
  NOT FINISHED YET\
-##**Content**\
+## **Content** \
   - Array.
   - Linked-list.
     > Singly linked-list.\

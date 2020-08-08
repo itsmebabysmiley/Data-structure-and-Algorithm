@@ -3,7 +3,7 @@ package Linkedlist;
 /**
  * one way linklist.
  */
-public class SingleLinklist {
+class SinglyLinkist {
 
     Node newNode;
     Node head;
@@ -87,7 +87,7 @@ public class SingleLinklist {
     }
 
     public static void main(String[] args) {
-        SingleLinklist linklist = new SingleLinklist();
+        SinglyLinkist linklist = new SinglyLinkist();
         for (int i = 10; i <= 20; i++) {
             linklist.add(i);
             System.out.printf("add %d: ", i);

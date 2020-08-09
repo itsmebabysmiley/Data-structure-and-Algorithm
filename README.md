@@ -11,7 +11,10 @@
   - [Stack.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Stack)
     >Using Array.\
     >Using linked-list.
-  - Queue.
+  - [Queue.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Queue)
+    >Using linked-list(Queue.java)\
+    >Using Array.\
+    >One way Queue (not popular I think).
   - Tree and applied tree.
   - Hash.
   - Tries.

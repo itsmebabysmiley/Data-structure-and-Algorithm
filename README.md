@@ -8,7 +8,9 @@
     > Double linked-list.\
     > Circular linked-list.\
     > Array linked-list.
-  - Stack.
+  - [Stack.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Stack)
+    >Using Array.\
+    >Using linked-list.
   - Queue.
   - Tree and applied tree.
   - Hash.

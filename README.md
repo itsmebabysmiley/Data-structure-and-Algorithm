@@ -17,6 +17,7 @@
     >One way Queue (not popular I think).
   - [Tree and applied tree.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Tree) not finish yet
     >Binary tree.
+    >K-ary tree.
     
   - Hash.
   - Tries.

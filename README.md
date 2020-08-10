@@ -1,5 +1,5 @@
 # Data-structure-and-Algorithm
- NOT FINISHED YET
+ NOT FINISH YET
  I just want to know how it work.
 ## **Content** 
   - Array.
@@ -15,8 +15,9 @@
     >Using linked-list(Queue.java)\
     >Using Array.\
     >One way Queue (not popular I think).
-  - [Tree and applied tree.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Tree)
+  - [Tree and applied tree.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Tree) not finish yet
     >Binary tree.
+    
   - Hash.
   - Tries.
   - Priority Queue and Heap.

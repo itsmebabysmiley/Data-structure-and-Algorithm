@@ -1,6 +1,7 @@
 # Data-structure-and-Algorithm
  NOT FINISH YET
- I just want to know how it work.
+ I just want to know how it work.\
+**NOW I"M TOO LAZY TO DO IT :laughing:**
 ## **Content** 
   - Array.
   - [Linked-list.](https://github.com/itsmebabysmiley/Data-structure-and-Algorithm/tree/master/Linkedlist)

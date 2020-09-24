@@ -29,7 +29,7 @@ public class Node {
         next = nextNode;
     }
 
-    public Object getItem() {
+    public Deck getItem() {
         return item;
     }
 

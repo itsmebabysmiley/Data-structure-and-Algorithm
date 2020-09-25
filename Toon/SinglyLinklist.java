@@ -10,7 +10,7 @@ class SinglyLinkist {
     Node curr;
     Node prev;
     Node sorted;
-    
+
     public void add(Deck newItem) {
         if(head == null){
             newNode = new Node(newItem);
@@ -20,7 +20,7 @@ class SinglyLinkist {
         head = newNode;
     }
     
-    void insertionSort(Node headref)  
+    public void insertionSort(Node headref)  
     { 
         // Initialize sorted linked list 
         sorted = null; 
@@ -29,19 +29,20 @@ class SinglyLinkist {
         // Node to sorted 
         while (current != null)  
         { 
-            Node temp = current;
             
             // Store next for next iteration 
             Node next = current.getNext(); 
             // insert current in sorted linked list 
-            sortedInsert(current);
-            
+            insertAt(current);
+            show(sorted);
             // Update current 
             current = next; 
         } 
         // Update head to point to sorted linked list 
-        head = sorted; 
-    } 
+        head = sorted;
+        
+    }
+    
   
     /* 
      * function to insert a new_Node in a list. Note that  
@@ -49,30 +50,27 @@ class SinglyLinkist {
      * can modify the head of the input linked list  
      * (similar to add()) 
      */
-    void sortedInsert(Node newNode)  
+    
+    void insertAt(Node newNode)  
     { 
-        /* Special case for the head end */
+        //Special case for the head end 
         if (sorted == null || sorted.getItem().compareTo(newNode.getItem())>=0)  
         {   newNode.setNext(sorted);
             sorted = newNode; 
         } 
         else 
         { 
-            Node current = sorted; 
-            /* Locate the Node before the point of insertion */
+            Node current = sorted;
+            //Locate the Node before the point of insertion
             while (current.getNext() != null && current.getNext().getItem().compareTo(newNode.getItem())<0)  
             { 
-                current = current.getNext();
-                
+                current = current.getNext(); 
             }
-            
             newNode.setNext(current.getNext()); 
             current.setNext(newNode);
         } 
     } 
-    
-
-    public void show() {
+    public void show(Node head) {
         curr = head;
         while(curr != null){
             System.out.print(curr.getItem().toString()+" ");
@@ -103,4 +101,21 @@ class SinglyLinkist {
     public void setPrev(Node prev) {
         this.prev = prev;
     }
+
+    public Node getNewNode() {
+        return newNode;
+    }
+
+    public void setNewNode(Node newNode) {
+        this.newNode = newNode;
+    }
+
+    public Node getSorted() {
+        return sorted;
+    }
+
+    public void setSorted(Node sorted) {
+        this.sorted = sorted;
+    }
+    
 }

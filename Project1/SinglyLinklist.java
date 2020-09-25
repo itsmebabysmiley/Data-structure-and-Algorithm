@@ -1,7 +1,7 @@
-import java.util.Scanner;
 
 /**
  * one way linklist.
+ * @author Nopparat Pengsuk 6288103 sec2
  */
 class SinglyLinkist {
 
@@ -11,27 +11,31 @@ class SinglyLinkist {
     Node prev;
     
     public void add(Object newItem,int number) {
+        //head node
         if(head == null){
             newNode = new Node(newItem,number);
-        }else{
+        }
+        //not head node
+        else{
             newNode = new Node(newItem,head,number);
         }
         head = newNode;
     }
 
-    public void search(Object item) {
+    public String search(int key) {
         curr = head; //curr is use to find node.
-        prev = null; //prev is use to find previous node.
         while(curr != null){ //curr isn't at the end of linklist.
-            if(curr.getNumber() == (int)item){
-                System.out.println("Number "+item.toString()+", "+"Value "+curr.getItem()); //return true if can find an item.
-                return;
+            if(curr.getNumber() == key){
+                //return true if can find an item.
+                return "Number "+key+", "+"Value "+curr.getItem(); 
+                
             }else{
-                prev = curr; //set prev to be current node.
                 curr = curr.getNext(); //move curr to next node.
             }
         }
-        System.out.println("Number "+item.toString()+", "+"Not found");//if cann't find an item.
+        //if cann't find an item.
+        return "Number "+key+", "+"Not found";
+        
     }
 
     public void show() {
@@ -42,21 +46,4 @@ class SinglyLinkist {
         }
     }
 
-    public static void main(String[] args) {
-        SinglyLinkist linklist = new SinglyLinkist();
-        linklist.add("two", 2);
-        linklist.add("one", 1);
-        linklist.add("Twenty", 20);
-        linklist.add("Sixtynine", 69);
-        linklist.add("Eight", 8);
-        linklist.add("three", 3);
-        linklist.add("Nineteen", 19);
-        linklist.show();
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Input number to search: ");
-        int key = scan.nextInt();
-        linklist.search(key);
-
-        
-    }
 }

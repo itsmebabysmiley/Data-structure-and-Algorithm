@@ -1,4 +1,3 @@
-package HASHING.Hashtable;
 class Hashtable {
     private Item[] hasharray;
     private Item item;
@@ -42,7 +41,7 @@ class Hashtable {
             if(hasharray[i] != null)
                 System.out.println("index: " + i + " " + hasharray[i].toString());
             else 
-                System.out.println("index: " + i + " null");
+                System.out.println("index: " + i + " -");
         }
 
     }

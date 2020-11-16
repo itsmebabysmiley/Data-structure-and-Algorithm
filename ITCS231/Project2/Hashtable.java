@@ -19,6 +19,7 @@ class Hashtable {
     }
     
     private boolean isFull() {
+        // not finish 
         return false;
     }
 

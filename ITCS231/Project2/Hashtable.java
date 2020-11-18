@@ -8,6 +8,10 @@ class Hashtable {
     }
 
     public void insert(String word) {
+        if(isFull()){
+            System.out.println("Hash is full.");
+            return;
+        }
         int index = hashfunc(word);
         item  = new Item(word);
         //hasharray[index] = item;
@@ -18,9 +22,14 @@ class Hashtable {
         hasharray[index] = item; // insert item
     }
     
-    private boolean isFull() {
-        // not finish 
-        return false;
+    public boolean isFull() {
+        // not finish
+        for(int i = 0; i<hasharray.length; i++){
+            if(hasharray[i] == null){
+                return false;
+            }
+        }
+        return true;
     }
 
     public int hashfunc(String word) {
@@ -31,7 +40,7 @@ class Hashtable {
             char ch = word.charAt(i);
             int ch_int = (int) ch - 'a' + 1;
             //int x = ch_int * (int) Math.pow(27, _length);
-            value += ch_int * Math.pow(27,_length--);
+            value += ch_int * Math.pow(26,_length--);
         }
         return value % this.size;
     }
@@ -53,8 +62,6 @@ class Hashapp {
     public static void main(String[] args) {
         int size = 14*2;
         Hashtable h = new Hashtable(size);
-        //System.out.println(h.hashfunc("cats"));
-        
         h.insert("gate");
         h.insert("ice");
         h.insert("court");

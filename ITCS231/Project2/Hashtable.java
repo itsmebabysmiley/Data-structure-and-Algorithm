@@ -1,3 +1,8 @@
+/**
+ * Nopparat Pengsuk
+ * Section 2
+ * 6288103
+ */
 class Hashtable {
     private Item[] hasharray;
     private Item item;
@@ -6,7 +11,10 @@ class Hashtable {
         hasharray = new Item[i];
         this.size = i;
     }
-
+    /**
+     * if tablehash is not full.
+     * do insert by linear prob.
+     */
     public void insert(String word) {
         if(isFull()){
             System.out.println("Hash is full.");
@@ -23,7 +31,6 @@ class Hashtable {
     }
     
     public boolean isFull() {
-        // not finish
         for(int i = 0; i<hasharray.length; i++){
             if(hasharray[i] == null){
                 return false;
@@ -31,9 +38,13 @@ class Hashtable {
         }
         return true;
     }
-
+    /**
+     * convert word to number. theb find index by use number mod with table size.
+     * @param word
+     * @return index
+     */
     public int hashfunc(String word) {
-        //convert word to number
+        /*convert word to number*/
         int _length = word.length()-1;
         int value = 0;  //maybe out of range int
         for(int i = 0; i < word.length(); i++){
@@ -42,6 +53,7 @@ class Hashtable {
             //int x = ch_int * (int) Math.pow(27, _length);
             value += ch_int * Math.pow(26,_length--);
         }
+
         return value % this.size;
     }
 
